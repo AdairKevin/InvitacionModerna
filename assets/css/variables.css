@@ -1,42 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-:root { 
-    --bg-dorado-1:#F2D8A7;
-    --bg-dorado-2:#D9AF63;
-    --bg-dorado-3:#BF8C4E;
-    --bg-dorado-4:#BF793B;
-    --bg-dorado-5:#84643f;
-    --txt-body: #242424;
-    --white: #ffffff;
-    --gray: #989898;
+:root {
+  --bg-dorado-1: #f2d8a7;
+  --bg-dorado-2: #d9af63;
+  --bg-dorado-3: #bf8c4e;
+  --bg-dorado-4: #bf793b;
+  --bg-dorado-5: #84643f;
+  --txt-body: #242424;
+  --white: #ffffff;
+  --gray: #989898;
 
-    --bg-dorado-opacity-50: rgba(242,216,167,50%);
+  --bg-dorado-opacity-50: rgba(242, 216, 167, 50%);
 
-    --bg-section-light: #D9D9D9;
-    --bg-section-dark: #393939; 
-    --bg-footer: #242424;
+  --bg-section-light: #d9d9d9;
+  --bg-section-dark: #393939;
+  --bg-footer: #242424;
 
-    --bg-gradient: linear-gradient(131deg, #D9AF63 -3.63%, #BF8C4E 55.5%, #BF793B 107.94%); 
+  --bg-gradient: linear-gradient(
+    131deg,
+    #d9af63 -3.63%,
+    #bf8c4e 55.5%,
+    #bf793b 107.94%
+  );
 
-    --font-great-vibes: "Great Vibes", cursive;
-    --font-PT-serif: "PT Serif", serif;
-     
-    --img-photo-home: url(../img/Photo-home.webp);
-    --img-F1: url(../img/F1.webp);
-    --img-F2: url(../img/F2.webp);
-    --img-F3: url(../img/F3.webp);
-    --img-F4: url(../img/F4.webp);
-    --img-F5: url(../img/F5.webp); 
+  --font-great-vibes: "Great Vibes", cursive;
+  --font-PT-serif: "PT Serif", serif;
 
-    --img-overlay-stain-1: url(../img/stain-1.svg); 
-    --img-overlay-stain-2: url(../img/stain-2.svg); 
+  --img-photo-home: url(../img/Photo-home.webp);
+  --img-F1: url(../img/F1.webp);
+  --img-F2: url(../img/F2.webp);
+  --img-F3: url(../img/F3.webp);
+  --img-F4: url(../img/F4.webp);
+  --img-F5: url(../img/F5.webp);
 
-    --img-overlay-points-1: url(../img/points-2.svg); 
-    --img-overlay-points-2: url(../img/points-2.svg); 
+  --img-overlay-stain-1: url(../img/stain-1.svg);
+  --img-overlay-stain-2: url(../img/stain-2.svg);
 
-    --img-overlay-leaf-1: url(../img/leaf-1.svg); 
-    --img-overlay-leaf-2: url(../img/leaf-2.svg);  
-    --img-overlay-leaf-3: url(../img/leaf-3.svg);  
- 
+  --img-overlay-points-1: url(../img/points-2.svg);
+  --img-overlay-points-2: url(../img/points-2.svg);
+
+  --img-overlay-leaf-1: url(../img/leaf-1.svg);
+  --img-overlay-leaf-2: url(../img/leaf-2.svg);
+  --img-overlay-leaf-3: url(../img/leaf-3.svg);
 }
