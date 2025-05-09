@@ -1,196 +1,219 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David&Gaby</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/variables.css">
-</head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+  </head>
 
-<body class="center">
+  <body class="center">
     <div class="content">
-        <section class="section-home">
-            <div class="home-title center">
-                <img src="./assets/img/rings-1.svg" alt="rings">
-                <h1>Nuestra boda</h1>
-            </div>
-            <div class="home-content">
-                <img class="home-img" alt="photo" src="./assets/img/Photo-home.webp">
-                <div class="box-audio">
-                    <div class="container">
-                        <div class="row">
-                            <div class="play-music">
-                                <div id="music-animation" class="music-animation">
-                                    <span class="bar bar1"></span>
-                                    <span class="bar bar2"></span>
-                                    <span class="bar bar3"></span>
-                                    <span class="bar bar4"></span>
-                                    <span class="bar bar5"></span>
-                                </div>
-                                <div class="music-toggle">
-                                    <a onClick="togglePlay()" id="toggle" data-text-swap="Music on">Music off</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <audio id="music" autoplay="autoplay" loop="loop">
-                        <source src="./assets/music.mp3" type="audio/mpeg">
-                        Tu navegador no soporta el elemento
-                    </audio>
-                </div> 
-                <div class="home-txt">
-                    <b>Eclesiastés 4:12</b>
-                    <p>
-                        Y si alguno prevaleciere contra uno, dos le resistirán; y cordón de tres dobleces no se rompe
-                        pronto.
-                    </p>
+      <section class="section-home">
+        <div class="home-title center">
+          <img src="./assets/img/rings-1.svg" alt="rings" />
+          <h1>Nuestra boda</h1>
+        </div>
+        <div class="home-content">
+          <img
+            class="home-img"
+            alt="photo"
+            src="./assets/img/Photo-home.webp"
+          />
+          <div class="box-audio">
+            <div class="container">
+              <div class="row">
+                <div class="play-music">
+                  <div id="music-animation" class="music-animation">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                    <span class="bar bar5"></span>
+                  </div>
+                  <div class="music-toggle">
+                    <a
+                      onClick="togglePlay()"
+                      id="toggle"
+                      data-text-swap="Music on"
+                      >Music off</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+            <audio id="music" autoplay="autoplay" loop="loop">
+              <source src="./assets/music.mp3" type="audio/mpeg" />
+              Tu navegador no soporta el elemento
+            </audio>
+          </div>
+          <div class="home-txt">
+            <b>Eclesiastés 4:12</b>
+            <p>
+              Y si alguno prevaleciere contra uno, dos le resistirán; y cordón
+              de tres dobleces no se rompe pronto.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="section-info">
-            <div class="overlay-section-info">
-                <span></span>
-                <span></span>
+      <section class="section-info">
+        <div class="overlay-section-info">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-info">
+          <div class="info-primary">
+            <h1>David & Gabriela</h1>
+            <p>
+              Con nuestro Amor, con la presencia de Dios entre nosotros y la
+              Bendición de nuestros padres
+            </p>
+          </div>
+          <div class="info-secundary">
+            <div class="info-content">
+              <b>Padres del novio</b>
+              <ul>
+                <li>Hugo Reisancho Ruiz</li>
+                <li>Yolanda Palma Anchundia</li>
+              </ul>
             </div>
-            <div class="box-info">
-                <div class="info-primary">
-                    <h1>David & Gabriela</h1>
-                    <p>Con nuestro Amor, con la presencia de Dios entre nosotros y la Bendición de nuestros padres</p>
-                </div>
-                <div class="info-secundary">
-                    <div class="info-content">
-                        <b>Padres del novio</b>
-                        <ul>
-                            <li>Hugo Reisancho Ruiz</li>
-                            <li>Yolanda Palma Anchundia</li>
-                        </ul>
-                    </div>
-                    <div class="info-content">
-                        <b>Padres de la novia</b>
-                        <ul>
-                            <li>Bolívar Peralta Ávila</li>
-                            <li>Elizabeth Potes Párraga</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="section-date">
-                    <div class="date-info center">
-                        <img width="75" src="./assets/img/rings-2.svg" alt="rings">
-                        <p class="date-text">
-                            Consagramos nuestro amor ante el Señor y deseamos compartir esta alegría.
-                        </p>
-                    </div>
-                    <div class="date-box">
-                        <h2>SÁBADO</h2>
-                        <ul class="center">
-                            <li>SEPT</li>
-                            <li>21</li>
-                            <li>18:00</li>
-                        </ul>
-                    </div>
-                    <ul class="date-time">
-                        <li>
-                            <div class="time_number" id="dias"></div>
-                            <div class="time_txt">Días</div>
-                        </li>
-                        <li>
-                            <div class="time_number" id="horas"></div>
-                            <div class="time_txt">Horas</div>
-                        </li>
-                        <li>
-                            <div class="time_number" id="minutos"></div>
-                            <div class="time_txt">Minutos</div>
-                        </li>
-                        <li>
-                            <div class="time_number" id="segundos"></div>
-                            <div class="time_txt">Segundos</div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="info-content">
+              <b>Padres de la novia</b>
+              <ul>
+                <li>Bolívar Peralta Ávila</li>
+                <li>Elizabeth Potes Párraga</li>
+              </ul>
             </div>
-        </section>
+          </div>
+          <div class="section-date">
+            <div class="date-info center">
+              <img width="75" src="./assets/img/rings-2.svg" alt="rings" />
+              <p class="date-text">
+                Consagramos nuestro amor ante el Señor y deseamos compartir esta
+                alegría.
+              </p>
+            </div>
+            <div class="date-box">
+              <h2>SÁBADO</h2>
+              <ul class="center">
+                <li>SEPT</li>
+                <li>21</li>
+                <li>18:00</li>
+              </ul>
+            </div>
+            <ul class="date-time">
+              <li>
+                <div class="time_number" id="dias"></div>
+                <div class="time_txt">Días</div>
+              </li>
+              <li>
+                <div class="time_number" id="horas"></div>
+                <div class="time_txt">Horas</div>
+              </li>
+              <li>
+                <div class="time_number" id="minutos"></div>
+                <div class="time_txt">Minutos</div>
+              </li>
+              <li>
+                <div class="time_number" id="segundos"></div>
+                <div class="time_txt">Segundos</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="section-place">
-            <div class="overlay-section-place">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+      <section class="section-place">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place">
+          <div class="place-info center">
+            <img width="75" src="./assets/img/church.svg" alt="church" />
+            <div class="place-txt">
+              <h2>Ceremonia y Celebración</h2>
+              <p>
+                Iglesia Sur de Guayaquil - Av. Juan Montalván pasaje 1  (frente
+                al colegio letras y Vida)
+              </p>
             </div>
-            <div class="box-place">
-                <div class="place-info center">
-                    <img width="75" src="./assets/img/church.svg" alt="church">
-                    <div class="place-txt">
-                        <h2>Ceremonia y Celebración</h2>
-                        <p>
-                            Iglesia Sur de Guayaquil - Av. Juan Montalván pasaje 1
-                             (frente al colegio letras y Vida)
-                        </p>
-                    </div>
-                </div>
-                <a class="place-btn" href="https://www.google.com/maps?q=-2.2411685,-79.8972148&z=17&hl=es"
-                    target="_blank">
-                    VER UBICACIÓN
-                </a>
-            </div>
-        </section>
+          </div>
+          <a
+            class="place-btn"
+            href="https://www.google.com/maps?q=-2.2411685,-79.8972148&z=17&hl=es"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
 
-        <section class="section-slider">
-            <div class="slider-photo">
-                <figure>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                </figure>
-            </div>
-            <div class="slider-txt">
-                <b>1 Corintios 13:13</b>
-                <p>
-                    Y ahora permanecen la fe, la esperanza y el amor, estos tres; pero el mayor de ellos es el amor.
-                </p>
-            </div>
-        </section>
+      <section class="section-slider">
+        <div class="slider-photo">
+          <figure>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+          </figure>
+        </div>
+        <div class="slider-txt">
+          <b>1 Corintios 13:13</b>
+          <p>
+            Y ahora permanecen la fe, la esperanza y el amor, estos tres; pero
+            el mayor de ellos es el amor.
+          </p>
+        </div>
+      </section>
 
-        <section class="section-info-adicional">
-            <div class="info-clothes">
-                <img height="60" src="./assets/img/Clothes.svg" alt="clothes">
-                <div class="clothes-txt">
-                    <h2>Vestimenta</h2>
-                    <p>Formal</p>
-                </div>
-            </div>
-            <div class="info-separator">
-                <img src="./assets/img/separator.svg" alt="separator">
-            </div>
-            <div class="info-envelope">
-                <img width="60" src="./assets/img/envelope.svg" alt="envelope">
-                <div class="envelope-txt"></div>
-                <p>Para su comodidad, recibiremos el obsequio en sobre cerrado.</p>
-            </div>
-        </section>
+      <section class="section-info-adicional">
+        <div class="info-clothes">
+          <img height="60" src="./assets/img/Clothes.svg" alt="clothes" />
+          <div class="clothes-txt">
+            <h2>Vestimenta</h2>
+            <p>Formal</p>
+          </div>
+        </div>
+        <div class="info-separator">
+          <img src="./assets/img/separator.svg" alt="separator" />
+        </div>
+        <div class="info-envelope">
+          <img width="60" src="./assets/img/envelope.svg" alt="envelope" />
+          <div class="envelope-txt"></div>
+          <p>Para su comodidad, recibiremos el obsequio en sobre cerrado.</p>
+        </div>
+      </section>
 
-        <section class="section-message">
-            <div class="overlay-section-message">
-                <span></span>
-                <span></span>
-            </div>
-            <div class="box-message">
-                <p>Los mejores momentos de la vida <br> merecen ser compartidos</p>
-                <b>¡Gracias por acompañarnos!</b>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer> Design by <a href="https://www.instagram.com/brainwit.ec/" target="_blank">Brainwit</a> @2024
-        </footer>
+      <section class="section-message">
+        <div class="overlay-section-message">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-message">
+          <p>
+            Los mejores momentos de la vida <br />
+            merecen ser compartidos
+          </p>
+          <b>¡Gracias por acompañarnos!</b>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        Design by
+        <a href="https://www.instagram.com/brainwit.ec/" target="_blank"
+          >Brainwit</a
+        >
+        @2024
+      </footer>
     </div>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
