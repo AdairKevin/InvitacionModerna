@@ -5,11 +5,13 @@
   height: 10px;
   background-color: var(--gray);
   width: 87px;
-  position: absolute;
-  bottom: 126px;
+  position: fixed;
+  z-index: 999;
+  top: 150;
   right: -14px;
   padding: 0.5rem 1rem;
   border-radius: 1rem 0 0 1rem;
+  opacity: 0.8;
 }
 
 .play-music {
@@ -114,7 +116,7 @@
   position: relative;
   gap: 1rem;
   padding: 1.5rem 0 0 0;
-  background-color: var(--bg-section-light);
+  background-color: #ffffff;
 }
 .home-content {
   display: flex;
@@ -586,6 +588,7 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
+  margin: 15px 0 15px 0;
 }
 
 .clothes-txt h2 {
@@ -597,6 +600,7 @@
 
 .clothes-txt p {
   font-size: medium;
+  padding: 0 50px;
 }
 
 .info-envelope {
@@ -615,6 +619,13 @@
 .info-envelope P {
   width: 80%;
   font-size: medium;
+}
+
+.info-envelope h2 {
+  font-family: var(--font-great-vibes);
+  font-size: xx-large;
+  color: var(--bg-dorado-4);
+  font-weight: 400;
 }
 
 /* -----------------------
@@ -686,10 +697,29 @@
   font-weight: 700;
   border: none;
   margin-top: 20px;
+  background: var(--bg-gradient);
 
   a {
     text-decoration: none;
     color: var(--txt-body);
+    text-transform: uppercase;
+  }
+}
+
+.section-padrinos {
+  position: relative;
+  background-color: var(--bg-section-dark);
+  padding: 50px 30px;
+
+  b {
+    font-family: var(--font-great-vibes);
+    color: var(--bg-dorado-2);
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  p {
+    color: rgb(255, 255, 255);
   }
 }
 
