@@ -1,0 +1,166 @@
+{
+  "_instrucciones": "Aquí se cambian TODOS los textos, fotos, links y datos de la invitación. Cambia solo lo que está a la derecha de los dos puntos. Los textos aceptan <br /> para saltos de línea. Para ocultar un grupo agrega \"mostrar\": false dentro de él solo si la plantilla lo permite. La fecha de evento.inicio (AAAA-MM-DDTHH:MM) la usan la cuenta regresiva y el calendario. La galería usa exactamente 5 fotos (la animación está hecha para 5).",
+  "pagina": {
+    "titulo": "InvitacionModerna"
+  },
+  "evento": {
+    "inicio": "2026-09-21T18:00",
+    "duracionHoras": 5,
+    "tituloCalendario": "Nuestra Boda",
+    "detallesCalendario": "Te esperamos para celebrar nuestro gran día.",
+    "lugarCalendario": "Salón de Eventos Las Orquídeas"
+  },
+  "portada": {
+    "iconoAnillos": "./assets/img/rings-1.svg",
+    "iconoAnillosAlt": "rings",
+    "evento": "Nuestra Boda",
+    "foto": "./assets/img/portada.jpg",
+    "fotoAlt": "photo",
+    "botonMusicaEncendida": "Music on",
+    "botonMusicaApagada": "Music off",
+    "musica": "./assets/music.mp3",
+    "musicaSinSoporte": "Tu navegador no soporta el elemento",
+    "bienvenidaTitulo": "BIENVENIDOS",
+    "bienvenidaTexto": "Nos llena de alegría compartir con ustedes uno de los días más importantes de nuestras vidas. Con amor, les invitamos a ser parte de nuestra historia y celebrar juntos el inicio de esta nueva etapa."
+  },
+  "invitacion": {
+    "nombres": "David & Gabriela",
+    "frase": "Con nuestro Amor, con la presencia de Dios entre nosotros y la Bendición de nuestros padres",
+    "familia": [
+      {
+        "titulo": "Padres del novio",
+        "nombre1": "Hugo Reisancho Ruiz",
+        "nombre2": "Yolanda Palma Anchundia"
+      },
+      {
+        "titulo": "Padres de la novia",
+        "nombre1": "Bolívar Peralta Ávila",
+        "nombre2": "Elizabeth Potes Párraga"
+      }
+    ],
+    "iconoAnillos": "./assets/img/rings-2.svg",
+    "iconoAnillosAlt": "rings",
+    "fraseFecha": "Consagramos nuestro amor ante el Señor y deseamos compartir esta alegría.",
+    "dia": "SÁBADO",
+    "mes": "SEPT",
+    "diaNumero": "21",
+    "hora": "18:00",
+    "dias": "Días",
+    "horas": "Horas",
+    "minutos": "Minutos",
+    "segundos": "Segundos"
+  },
+  "calendario": {
+    "titulo": "Reserva la Fecha",
+    "diasSemana": "<span>D</span> <span>L</span> <span>M</span> <span>M</span> <span>J</span> <span>V</span> <span>S</span>",
+    "boton": "Agregar a mi calendario",
+    "icono": "./assets/img/calendar.svg",
+    "meses": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ]
+  },
+  "ceremonia": {
+    "icono": "./assets/img/church.svg",
+    "iconoAlt": "church",
+    "titulo": "Ceremonia",
+    "lugar": "Iglesia del Carmen - Pt 12 entre norte 36 y 37",
+    "mapa": "",
+    "boton": "VER UBICACIÓN"
+  },
+  "recepcion": {
+    "icono": "./assets/img/copa.png",
+    "iconoAlt": "church",
+    "titulo": "Salón de Eventos",
+    "lugar": "Las Orquideas - Av. Soto y Gama col Del Carmen, entre Pt 12 y Pt 13",
+    "mapa": "",
+    "boton": "VER UBICACIÓN"
+  },
+  "galeria": {
+    "fotos": [
+      "./assets/img/F1.webp",
+      "./assets/img/F2.webp",
+      "./assets/img/F3.webp",
+      "./assets/img/F4.webp",
+      "./assets/img/F5.webp"
+    ],
+    "frase": "\"Te amo no por quien eres, sino por quien soy cuando estoy contigo.\"",
+    "autor": "— Gabriel García Márquez"
+  },
+  "padrinos": {
+    "titulo": "Nuestros Padrinos",
+    "texto": "Con profundo cariño y gratitud, agradecemos a nuestros padrinos por acompañarnos y ser parte esencial de este día tan especial."
+  },
+  "cronograma": {
+    "icono": "./assets/img/rings-2.svg",
+    "iconoAlt": "Cronograma",
+    "titulo": "Cronograma",
+    "descripcion": "Cada momento ha sido preparado con mucho cariño para compartirlo contigo.",
+    "actividades": [
+      {
+        "hora": "5:30 PM",
+        "icono": "./assets/img/church.svg",
+        "actividad": "Ceremonia Religiosa",
+        "descripcion": "Comencemos este hermoso día dando gracias a Dios por nuestra unión."
+      },
+      {
+        "hora": "7:00 PM",
+        "icono": "./assets/img/copa.png",
+        "actividad": "Recepción",
+        "descripcion": "Los esperamos para celebrar juntos este momento tan especial."
+      },
+      {
+        "hora": "8:00 PM",
+        "icono": "./assets/img/food.svg",
+        "actividad": "Cena",
+        "descripcion": "Disfrutemos una deliciosa velada en compañía de familiares y amigos."
+      },
+      {
+        "hora": "9:00 PM",
+        "icono": "./assets/img/music.svg",
+        "actividad": "Baile",
+        "descripcion": "Es momento de celebrar, bailar y crear recuerdos inolvidables."
+      },
+      {
+        "hora": "11:30 PM",
+        "icono": "./assets/img/cake.svg",
+        "actividad": "Pastel",
+        "descripcion": "Compartamos juntos uno de los momentos más dulces de la noche."
+      }
+    ]
+  },
+  "infoAdicional": {
+    "iconoVestimenta": "./assets/img/Clothes.svg",
+    "iconoVestimentaAlt": "clothes",
+    "vestimentaTitulo": "Vestimenta",
+    "vestimentaTexto": "La vestimenta es formal, pensada para que disfrutes de esta noche especial con elegancia y libertad de movimiento.",
+    "separador": "./assets/img/separator.svg",
+    "separadorAlt": "separator",
+    "iconoRegalos": "./assets/img/envelope.svg",
+    "iconoRegalosAlt": "envelope",
+    "regalosTitulo": "Mesa de regalos",
+    "regalosTexto": "Para su comodidad, recibiremos el obsequio en sobre cerrado."
+  },
+  "confirmacion": {
+    "frase": "Los mejores momentos de la vida <br> merecen ser compartidos",
+    "agradecimiento": "¡Gracias por acompañarnos!",
+    "link": "#",
+    "boton": "Confirmar asistencia"
+  },
+  "footer": {
+    "texto": "Design by",
+    "link": "",
+    "marca": "Mirai",
+    "anio": "@2025"
+  }
+}

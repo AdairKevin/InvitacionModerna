@@ -1,24 +1,26 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InvitacionModerna</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/layout.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
   </head>
-
   <body class="center">
+    <!-- Todos los textos, fotos y links se editan en contenido.json; aquí solo van variables -->
+    <template id="plantilla">
     <div class="content">
       <section class="section-home">
         <div class="home-title center">
-          <img src="./assets/img/rings-1.svg" alt="rings" />
-          <h1>Nuestra Boda</h1>
+          <img src="{{portada.iconoAnillos}}" alt="{{portada.iconoAnillosAlt}}">
+          <h1>{{portada.evento}}</h1>
         </div>
         <div class="home-content">
-          <img class="home-img" alt="photo" src="./assets/img/portada.jpg" />
+          <img class="home-img" alt="{{portada.fotoAlt}}" src="{{portada.foto}}">
           <div class="box-audio">
             <div class="container">
               <div class="row">
@@ -31,29 +33,19 @@
                     <span class="bar bar5"></span>
                   </div>
                   <div class="music-toggle">
-                    <a
-                      onClick="togglePlay()"
-                      id="toggle"
-                      data-text-swap="Music on"
-                      >Music off</a
-                    >
+                    <a onclick="togglePlay()" id="toggle" data-text-swap="{{portada.botonMusicaEncendida}}">{{portada.botonMusicaApagada}}</a>
                   </div>
                 </div>
               </div>
             </div>
             <audio id="music" autoplay="autoplay" loop="loop">
-              <source src="./assets/music.mp3" type="audio/mpeg" />
-              Tu navegador no soporta el elemento
+              <source src="{{portada.musica}}" type="audio/mpeg">
+              {{portada.musicaSinSoporte}}
             </audio>
           </div>
           <div class="home-txt">
-            <b>BIENVENIDOS</b>
-            <p>
-              Nos llena de alegría compartir con ustedes uno de los días más
-              importantes de nuestras vidas. Con amor, les invitamos a ser parte
-              de nuestra historia y celebrar juntos el inicio de esta nueva
-              etapa.
-            </p>
+            <b>{{portada.bienvenidaTitulo}}</b>
+            <p>{{portada.bienvenidaTexto}}</p>
           </div>
         </div>
       </section>
@@ -65,60 +57,50 @@
         </div>
         <div class="box-info">
           <div class="info-primary">
-            <h1>David & Gabriela</h1>
-            <p>
-              Con nuestro Amor, con la presencia de Dios entre nosotros y la
-              Bendición de nuestros padres
-            </p>
+            <h1>{{invitacion.nombres}}</h1>
+            <p>{{invitacion.frase}}</p>
           </div>
           <div class="info-secundary">
+            {{#invitacion.familia}}
             <div class="info-content">
-              <b>Padres del novio</b>
+              <b>{{titulo}}</b>
               <ul>
-                <li>Hugo Reisancho Ruiz</li>
-                <li>Yolanda Palma Anchundia</li>
+                <li>{{nombre1}}</li>
+                <li>{{nombre2}}</li>
               </ul>
             </div>
-            <div class="info-content">
-              <b>Padres de la novia</b>
-              <ul>
-                <li>Bolívar Peralta Ávila</li>
-                <li>Elizabeth Potes Párraga</li>
-              </ul>
-            </div>
+            {{/invitacion.familia}}
+            
           </div>
           <div class="section-date">
             <div class="date-info center">
-              <img width="75" src="./assets/img/rings-2.svg" alt="rings" />
-              <p class="date-text">
-                Consagramos nuestro amor ante el Señor y deseamos compartir esta
-                alegría.
-              </p>
+              <img width="75" src="{{invitacion.iconoAnillos}}" alt="{{invitacion.iconoAnillosAlt}}">
+              <p class="date-text">{{invitacion.fraseFecha}}</p>
             </div>
             <div class="date-box">
-              <h2>SÁBADO</h2>
+              <h2>{{invitacion.dia}}</h2>
               <ul class="center">
-                <li>SEPT</li>
-                <li>21</li>
-                <li>18:00</li>
+                <li>{{invitacion.mes}}</li>
+                <li>{{invitacion.diaNumero}}</li>
+                <li>{{invitacion.hora}}</li>
               </ul>
             </div>
             <ul class="date-time">
               <li>
                 <div class="time_number" id="dias"></div>
-                <div class="time_txt">Días</div>
+                <div class="time_txt">{{invitacion.dias}}</div>
               </li>
               <li>
                 <div class="time_number" id="horas"></div>
-                <div class="time_txt">Horas</div>
+                <div class="time_txt">{{invitacion.horas}}</div>
               </li>
               <li>
                 <div class="time_number" id="minutos"></div>
-                <div class="time_txt">Minutos</div>
+                <div class="time_txt">{{invitacion.minutos}}</div>
               </li>
               <li>
                 <div class="time_number" id="segundos"></div>
-                <div class="time_txt">Segundos</div>
+                <div class="time_txt">{{invitacion.segundos}}</div>
               </li>
             </ul>
           </div>
@@ -126,68 +108,19 @@
       </section>
 
       <div class="calendar-box">
-        <h3>Reserva la Fecha</h3>
+        <h3>{{calendario.titulo}}</h3>
 
         <div class="calendar">
-          <div class="calendar-header">Septiembre 2026</div>
+          <div class="calendar-header" id="calendarioMes"></div>
 
-          <div class="calendar-days">
-            <span>D</span>
-            <span>L</span>
-            <span>M</span>
-            <span>M</span>
-            <span>J</span>
-            <span>V</span>
-            <span>S</span>
-          </div>
+          <div class="calendar-days">{{calendario.diasSemana}}</div>
 
-          <div class="calendar-dates">
-            <span></span>
-            <span></span>
-
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span>11</span>
-            <span>12</span>
-
-            <span>13</span>
-            <span>14</span>
-            <span>15</span>
-            <span>16</span>
-            <span>17</span>
-            <span>18</span>
-            <span>19</span>
-            <span>20</span>
-            <span class="active">21</span>
-            <span>22</span>
-            <span>23</span>
-            <span>24</span>
-            <span>25</span>
-            <span>26</span>
-
-            <span>27</span>
-            <span>28</span>
-            <span>29</span>
-            <span>30</span>
-          </div>
+          <div class="calendar-dates" id="calendarioDias"></div>
         </div>
 
-        <a
-          class="calendar-btn"
-          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nuestra+Boda&dates=20260919T180000/20260919T230000&details=Te+esperamos+para+celebrar+nuestro+gran+día.&location=Salón+de+Eventos+Las+Orquídeas"
-          target="_blank"
-        >
-          <img src="./assets/img/calendar.svg" alt="" />
-          Agregar a mi calendario
+        <a class="calendar-btn" id="calendarioBoton" href="#" target="_blank">
+          <img src="{{calendario.icono}}" alt="">
+          {{calendario.boton}}
         </a>
       </div>
 
@@ -200,13 +133,13 @@
         </div>
         <div class="box-place">
           <div class="place-info center">
-            <img width="75" src="./assets/img/church.svg" alt="church" />
+            <img width="75" src="{{ceremonia.icono}}" alt="{{ceremonia.iconoAlt}}">
             <div class="place-txt">
-              <h2>Ceremonia</h2>
-              <p>Iglesia del Carmen - Pt 12 entre norte 36 y 37</p>
+              <h2>{{ceremonia.titulo}}</h2>
+              <p>{{ceremonia.lugar}}</p>
             </div>
           </div>
-          <a class="place-btn" href="" target="_blank"> VER UBICACIÓN </a>
+          <a class="place-btn" href="{{ceremonia.mapa}}" target="_blank">{{ceremonia.boton}}</a>
         </div>
       </section>
 
@@ -217,141 +150,81 @@
         </div>
         <div class="box-place-salon">
           <div class="place-info center">
-            <img width="105" src="./assets/img/copa.png" alt="church" />
+            <img width="105" src="{{recepcion.icono}}" alt="{{recepcion.iconoAlt}}">
             <div class="place-txt">
-              <h2>Salón de Eventos</h2>
-              <p>
-                Las Orquideas - Av. Soto y Gama col Del Carmen, entre Pt 12 y Pt
-                13
-              </p>
+              <h2>{{recepcion.titulo}}</h2>
+              <p>{{recepcion.lugar}}</p>
             </div>
           </div>
-          <a class="place-btn" href="" target="_blank"> VER UBICACIÓN </a>
+          <a class="place-btn" href="{{recepcion.mapa}}" target="_blank">{{recepcion.boton}}</a>
         </div>
       </section>
 
       <section class="section-slider">
         <div class="slider-photo">
           <figure>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
+            {{#galeria.fotos}}<div class="img" style="background-image: url('{{.}}')"></div>{{/galeria.fotos}}
           </figure>
         </div>
         <div class="slider-txt">
-          <p>
-            "Te amo no por quien eres, sino por quien soy cuando estoy contigo."
-          </p>
-          <b>— Gabriel García Márquez</b>
+          <p>{{galeria.frase}}</p>
+          <b>{{galeria.autor}}</b>
         </div>
       </section>
 
       <section class="section-padrinos">
         <div class="info-primary">
-          <b>Nuestros Padrinos</b>
-          <p>
-            Con profundo cariño y gratitud, agradecemos a nuestros padrinos por
-            acompañarnos y ser parte esencial de este día tan especial.
-          </p>
+          <b>{{padrinos.titulo}}</b>
+          <p>{{padrinos.texto}}</p>
         </div>
       </section>
 
       <section class="section-cronograma">
         <div class="cronograma-title">
-          <img src="./assets/img/rings-2.svg" alt="Cronograma" />
-          <h2>Cronograma</h2>
-          <p>
-            Cada momento ha sido preparado con mucho cariño para compartirlo
-            contigo.
-          </p>
+          <img src="{{cronograma.icono}}" alt="{{cronograma.iconoAlt}}">
+          <h2>{{cronograma.titulo}}</h2>
+          <p>{{cronograma.descripcion}}</p>
         </div>
 
         <div class="timeline">
+          {{#cronograma.actividades}}
           <div class="timeline-item">
-            <div class="timeline-hour">5:30 PM</div>
+            <div class="timeline-hour">{{hora}}</div>
 
             <div class="timeline-card">
-              <img src="./assets/img/church.svg" alt="" />
-              <h3>Ceremonia Religiosa</h3>
-              <p>
-                Comencemos este hermoso día dando gracias a Dios por nuestra
-                unión.
-              </p>
+              <img src="{{icono}}" alt="">
+              <h3>{{actividad}}</h3>
+              <p>{{descripcion}}</p>
             </div>
           </div>
+          {{/cronograma.actividades}}
 
-          <div class="timeline-item">
-            <div class="timeline-hour">7:00 PM</div>
+          
 
-            <div class="timeline-card">
-              <img src="./assets/img/copa.png" alt="" />
-              <h3>Recepción</h3>
-              <p>
-                Los esperamos para celebrar juntos este momento tan especial.
-              </p>
-            </div>
-          </div>
+          
 
-          <div class="timeline-item">
-            <div class="timeline-hour">8:00 PM</div>
+          
 
-            <div class="timeline-card">
-              <img src="./assets/img/food.svg" alt="" />
-              <h3>Cena</h3>
-              <p>
-                Disfrutemos una deliciosa velada en compañía de familiares y
-                amigos.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-hour">9:00 PM</div>
-
-            <div class="timeline-card">
-              <img src="./assets/img/music.svg" alt="" />
-              <h3>Baile</h3>
-              <p>
-                Es momento de celebrar, bailar y crear recuerdos inolvidables.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-hour">11:30 PM</div>
-
-            <div class="timeline-card">
-              <img src="./assets/img/cake.svg" alt="" />
-              <h3>Pastel</h3>
-              <p>
-                Compartamos juntos uno de los momentos más dulces de la noche.
-              </p>
-            </div>
-          </div>
+          
         </div>
       </section>
 
       <section class="section-info-adicional">
         <div class="info-clothes">
-          <img height="60" src="./assets/img/Clothes.svg" alt="clothes" />
+          <img height="60" src="{{infoAdicional.iconoVestimenta}}" alt="{{infoAdicional.iconoVestimentaAlt}}">
           <div class="clothes-txt">
-            <h2>Vestimenta</h2>
-            <p>
-              La vestimenta es formal, pensada para que disfrutes de esta noche
-              especial con elegancia y libertad de movimiento.
-            </p>
+            <h2>{{infoAdicional.vestimentaTitulo}}</h2>
+            <p>{{infoAdicional.vestimentaTexto}}</p>
           </div>
         </div>
         <div class="info-separator">
-          <img src="./assets/img/separator.svg" alt="separator" />
+          <img src="{{infoAdicional.separador}}" alt="{{infoAdicional.separadorAlt}}">
         </div>
         <div class="info-envelope">
-          <img width="60" src="./assets/img/envelope.svg" alt="envelope" />
+          <img width="60" src="{{infoAdicional.iconoRegalos}}" alt="{{infoAdicional.iconoRegalosAlt}}">
           <div class="envelope-txt"></div>
-          <h2>Mesa de regalos</h2>
-          <p>Para su comodidad, recibiremos el obsequio en sobre cerrado.</p>
+          <h2>{{infoAdicional.regalosTitulo}}</h2>
+          <p>{{infoAdicional.regalosTexto}}</p>
         </div>
       </section>
 
@@ -361,23 +234,24 @@
           <span></span>
         </div>
         <div class="box-message">
-          <p>
-            Los mejores momentos de la vida <br />
-            merecen ser compartidos
-          </p>
-          <b>¡Gracias por acompañarnos!</b>
+          <p>{{confirmacion.frase}}</p>
+          <b>{{confirmacion.agradecimiento}}</b>
           <button class="confirmar">
-            <a href="#"> Confirmar asistencia </a>
+            <a href="{{confirmacion.link}}">{{confirmacion.boton}}</a>
           </button>
         </div>
       </section>
       <!-- Footer -->
       <footer>
-        Design by
-        <a href="" target="_blank">Mirai</a>
-        @2025
+        {{footer.texto}}
+        <a href="{{footer.link}}" target="_blank">{{footer.marca}}</a>
+        {{footer.anio}}
       </footer>
     </div>
-    <script src="assets/js/main.js"></script>
+
+      <script src="assets/js/main.js"></script>
+    </template>
+
+    <script src="assets/js/motor.js"></script>
   </body>
 </html>
